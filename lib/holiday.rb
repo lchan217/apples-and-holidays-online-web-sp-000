@@ -71,8 +71,8 @@ holiday_hash.each do |season, holiday|
       words = holiday2.to_s.split("_")
         words.map do |x|
           x.capitalize!
-        end.join("_")
-        puts "#{words}: #{value}"
+        end
+        puts "#{words.join(" ")}: #{value}"
     end
    end
  end
